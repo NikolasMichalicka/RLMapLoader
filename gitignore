@@ -1,0 +1,16 @@
+# Build artifacts
+build/
+dist/
+*.spec
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Config (user-specific)
+rl_map_loader_config.json
+
+# IDE
+.vscode/
+.idea/
