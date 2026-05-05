@@ -16,17 +16,11 @@ if errorlevel 1 (
 
 :: Install build dependencies
 echo Installing dependencies...
-pip install customtkinter Pillow pyinstaller --quiet --upgrade 2>nul
+python -m pip install customtkinter Pillow pyinstaller --quiet --upgrade 2>nul
 if errorlevel 1 (
-    pip install customtkinter Pillow pyinstaller --quiet --upgrade --user 2>nul
+    python -m pip install customtkinter Pillow pyinstaller --quiet --upgrade --user 2>nul
 )
 echo Dependencies OK.
-echo.
-
-:: Find customtkinter path for --collect-data
-echo Locating customtkinter package...
-for /f "delims=" %%i in ('python -c "import customtkinter; import os; print(os.path.dirname(customtkinter.__file__))"') do set CTK_PATH=%%i
-echo Found: %CTK_PATH%
 echo.
 
 :: Build
@@ -34,12 +28,11 @@ echo Building executable...
 echo This may take a minute or two...
 echo.
 
-pyinstaller ^
+python -m PyInstaller ^
     --noconfirm ^
     --onefile ^
     --windowed ^
     --name "RLMapLoader" ^
-    --icon "NONE" ^
     --collect-data customtkinter ^
     --hidden-import PIL ^
     --hidden-import PIL._tkinter_finder ^
