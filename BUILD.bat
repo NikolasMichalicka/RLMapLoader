@@ -33,6 +33,8 @@ python -m PyInstaller ^
     --onefile ^
     --windowed ^
     --name "RLMapLoader" ^
+    --icon "icon.ico" ^
+    --add-data "icon.ico;." ^
     --collect-data customtkinter ^
     --hidden-import PIL ^
     --hidden-import PIL._tkinter_finder ^

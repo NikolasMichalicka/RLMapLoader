@@ -66,7 +66,7 @@ After selecting the folder, the app automatically looks for the subfolder `TAGam
 
 Create a folder anywhere on your computer (e.g. `C:\Users\YourName\Desktop\rlmaps`) and put your downloaded custom maps inside. Each map should be in **its own subfolder** containing a `.upk` file. See the Maps Folder Structure section below for details.
 
-You can download custom maps from sites like [Lethamyr's website](https://lethamyr.com/set-up-custom-maps) or the Rocket League custom maps community.
+You can download custom maps from sites like [Lethamyr's website](https://lethamyr.com/maps) or the Rocket League custom maps community.
 
 ---
 
