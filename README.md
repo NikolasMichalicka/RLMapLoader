@@ -13,6 +13,8 @@ Works alongside Easy Anti-Cheat — only swaps an offline map file (asset swap),
 ### Option 1: Standalone .exe (recommended)
 Go to [**Releases**](../../releases/latest) and download `RLMapLoader.exe`. No installation or Python needed — just run it.
 
+> **⚠️ Windows Defender may flag the .exe as a virus** — this is a known false positive that happens with almost all apps built using PyInstaller. The app is fully open-source and you can inspect every line of code in this repo. If you're uncomfortable with the .exe, use Option 2 below to run directly from source. To allow the .exe, go to Windows Security → Protection history → find the alert → Actions → Allow on device.
+
 ### Option 2: Run from source
 Requires [Python 3.9+](https://www.python.org/downloads/) (check "Add Python to PATH" during install).
 
